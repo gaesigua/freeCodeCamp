@@ -1,0 +1,73 @@
+<!--LEARN BASIC CSS BY BUILDING A CAFE MENU -->
+<!--STEP 1: Let's add all the declaration -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--STEP 2: Let's add head element within the html element, and add a title element -->
+    <title>Cafe Menu</title>
+    <!--STEP 3: Inside the head element, let's nest a meta element with an attribute named charset, and set the value to utf-8 to tell the browser how to encode the characters for the page -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--STEP 10: Up until now, you have been limited regarding the presentation and appearance of the content you create. To start taking control, add a style element within the head element. -->
+    <!-- STEP 11: Let's center the content of the h1 element by setting its text-align property to the value center.
+         STEP 12: Let's center the content of the h2 and the p elements by adding a new type selector for each one to the existing style element.-->
+    <!--STEP 13: Let's delete the three existing type selectors and replace them with one selector list that centers the text for the h1, h2, and p elements. -->
+    <!--STEP 14, 15: Let's create a CSS FILE, move the style element there. -->
+    <!-- STEP 16: Now let's link the styles2.css file so the styles will be applied again. -->
+     <link rel="stylesheet" href="styles2.css">
+     <!-- STEP 17: Let's add meta element with a special content attribute -->
+
+</head>
+<!--STEP 4: Let's add the body element to create some actual content-->
+<body>
+    <!-- STEP 20: Let's add a div element inside the body element and then move all the other elements inside the new div. Inside the opening div tag, add the id attribute with a value of menu. -->
+    <!-- STEP 26: Change the existing ID into a class with the same value -->
+    <div class="menu">
+        <!--Step 5: It's time to add some menu content. Add a main element within the existing body element. It will eventually contain pricing information about coffee and desserts offered by the cafe.-->
+    <main>
+        <!--Step 6: The name of the cafe is CAMPER CAFE. Add an h1 element within your main element. Give it the name of the cafe in capitalized letters to make it stand out. -->
+        <h1>CAMPER CAFE</h1>
+
+        <!--Step 7: To let visitors know the cafe was founded in 2020, add a p element below the h1 element with the text Est. 2020 -->
+        <P>Est. 2020 </P>
+        <!--Step 8: There will be two sections on the menu, one for coffees and one for desserts. Add a section element within the main element so you have a place to put all the coffees available. -->
+        <section>
+            <!--Step 9: Create an h2 element in the section element and give it the text Coffee. -->
+            <h2>Coffee</h2>
+            <!--STEP 29: Step 29: It’s looking good. Time to start adding some menu items. Add an empty article element under the Coffee heading. It will contain a flavor and price of each coffee you currently offer. -->
+            <!--STEP 36: Step 36: That is kind of what you want, but now it would be nice if the flavor and price were on the same line. p elements are block-level elements, so they take up the entire width of their parent element. To get them on the same line, you need to apply some styling to the p elements so they behave more like inline elements. To do that, start by adding a class attribute with the value item to the first article element under the Coffee heading. -->
+            <article  class="item">
+                <!--Step 30: 'article' elements commonly contain multiple elements that have related information. In this case, it will contain a coffee flavor and a price for that flavor. Nest two p elements inside your article element. The first one's text should be French Vanilla, and the second's text 3.00. -->
+                <!--STEP 31: Step 31: Starting below the existing coffee/price pair, add the following coffee and prices using article elements with two nested p elements inside each. As before, the first p element's text should contain the coffee flavor and the second p element's text should contain the price. -->
+                <!--Step 32: The flavors and prices are currently stacked on top of each other and centered with their respective p elements. It would be nice if the flavor was on the left and the price was on the right. Let's add the class name flavor to the French Vanilla p element. -->
+                <!-- Step 34: Next, you want to align the price to the right. Add a class named price to your p element that has 3.00 as its text.-->
+                <!-- Step 40: That worked, but there is still a little space on the right of the price. You could keep trying various percentages for the widths. Instead, use the back space key on your keyboard to move the p element with the class price next to the p element with the class flavor so that they are on the same line in the editor. Make sure there is no space between the two elements.-->
+                <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+            </article>
+            <article>
+                <p>Caramel Macchiato</p>
+                <p>3.75</p>
+            </article>
+            <article>
+                <p>Pumpkin Spice</p>
+                <p>3.50</p>
+            </article>
+            <article>
+                <p>Hazelnut</p>
+                <p>4.00</p>
+            </article>
+            <article>
+                <p>Mocha</p>
+                <p>4.50</p>
+            </article>
+        </section>
+
+    </main>
+
+    </div>
+    
+    
+</body>
+</html>
