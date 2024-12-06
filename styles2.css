@@ -1,0 +1,43 @@
+h1, h2, p {
+    text-align: center;
+}
+/* STEP 18, 19: Add another style to the file that changes the background-color property to brown for the body element.
+                Since the brown background makes it hard to read the text, let's change it to burlywood so the background has some color but you are still able to read the text */
+/* STEP 22: Comment here */
+/* STEP 28: Step 28Passed
+Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page. Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to an image */
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+/* STEP 21: let's use the #menu selector to give your element a width of 300px*/
+
+/* STEP 23: Now use the existing #menu selector to set the background color of the div element to be burlywood. */
+/* STEP 24: Let's change the width property's value to be 80%, to make it 80% the width of its parent element (body). */
+
+/* Step 25: Next, you want to center the #menu horizontally. You can do this by setting its margin-left and margin-right properties to auto. Think of the margin as invisible space around an element. Using these two margin properties, center the #menu element within the body element. */
+/* STEP 27: Change the existing #menu selector into a class selector by replacing #menu with a class named .menu. to apply the class's styling to the div elemnt. */
+.menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* STEP 33: Step 33: Using your new flavor class as a selector, set the text-align property's value to left. */
+/* STEP 38: Step 38: That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each. */
+/* STEP 39: Step 39: Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. White space characters can cause this issue as well. One way to fix this is to make each p element's width a little less than 50%. Change the width value to 49% for each class to see what happens. */
+.flavor {
+    text-align: left;
+    width: 49%;
+    
+}
+/* STEP 35: Step 35: Now align the text to the right for the elements with the price class. */
+.price {
+    text-align: right;
+    width: 49%;
+}
+/* STEP 37: The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this: .item p {} */
+.item p {
+    display: inline-block;
+}
+
