@@ -44,25 +44,39 @@
                 <!--Step 32: The flavors and prices are currently stacked on top of each other and centered with their respective p elements. It would be nice if the flavor was on the left and the price was on the right. Let's add the class name flavor to the French Vanilla p element. -->
                 <!-- Step 34: Next, you want to align the price to the right. Add a class named price to your p element that has 3.00 as its text.-->
                 <!-- Step 40: That worked, but there is still a little space on the right of the price. You could keep trying various percentages for the widths. Instead, use the back space key on your keyboard to move the p element with the class price next to the p element with the class flavor so that they are on the same line in the editor. Make sure there is no space between the two elements.-->
+                <!--Step 42: Now that you know it works, you can change the remaining article and p elements to match the first set. Start by adding the class item to the other article elements -->
+                <!--Step 43: Next, position the other p elements to be on the same line with no space between them.-->
+                <!--Step 44: To complete the styling, add the applicable class names flavor and price to all the remaining p elements.-->
                 <p class="flavor">French Vanilla</p><p class="price">3.00</p>
             </article>
-            <article>
-                <p>Caramel Macchiato</p>
-                <p>3.75</p>
+            <article class="item">
+                <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
             </article>
-            <article>
-                <p>Pumpkin Spice</p>
-                <p>3.50</p>
+            <article class="item">
+                <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
             </article>
-            <article>
-                <p>Hazelnut</p>
-                <p>4.00</p>
+            <article class="item">
+                <p class="flavor">Hazelnut</p><p class="price">4.00</p>
             </article>
-            <article>
-                <p>Mocha</p>
-                <p>4.50</p>
+            <article class="item">
+                <p class="flavor">Mocha</p><p class="price">4.50</p>
             </article>
         </section>
+        <!-- STEP 46: You will come back to styling the menu in a few steps, but for now, go ahead and add a second section element below the first for displaying the desserts offered by the cafe.-->
+         <!--STEP 47: Let's add an h2 element in the new section and give it the text Desserts. -->
+         <!--STEP 48: Add an empty article element under the Desserts heading. Give it a class attribute with the value item. -->
+         <!--STEP 49: Let's nest two p elements inside your article element. The first one's text should be Donut, and the second's text 1.50. Put both of them on the same line making sure there is no space between them.-->
+         <!--Step 50: For the two p elements you just added, add dessert as the value of the first p element's class attribute and the value price as the second p element's class attribute. -->
+         <section>
+            <h2>Desserts</h2>
+            <article class="item">
+                <p class="dessert">Donut</p>
+                <p class="price">1.50</p>
+
+
+            </article>
+
+         </section>
 
     </main>
 

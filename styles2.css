@@ -26,15 +26,17 @@ body {
 /* STEP 33: Step 33: Using your new flavor class as a selector, set the text-align property's value to left. */
 /* STEP 38: Step 38: That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each. */
 /* STEP 39: Step 39: Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. White space characters can cause this issue as well. One way to fix this is to make each p element's width a little less than 50%. Change the width value to 49% for each class to see what happens. */
+/* STEP 41: Now go ahead and change both the flavor and price class' widths to be 50% again. */
 .flavor {
     text-align: left;
-    width: 49%;
+    width: 75%;
     
 }
 /* STEP 35: Step 35: Now align the text to the right for the elements with the price class. */
+/* STEP 45: Step 45: If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. This is because the width of the p elements on the left side can only take up 50% of the space. Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%. */
 .price {
     text-align: right;
-    width: 49%;
+    width: 25%;
 }
 /* STEP 37: The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this: .item p {} */
 .item p {
