@@ -4,12 +4,18 @@ h1, h2, p {
 /* STEP 18, 19: Add another style to the file that changes the background-color property to brown for the body element.
                 Since the brown background makes it hard to read the text, let's change it to burlywood so the background has some color but you are still able to read the text */
 /* STEP 22: Comment here */
-/* STEP 28: Step 28Passed
-Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page. Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to an image */
+/* STEP 28: STEP 28: Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page. Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to an image */
+/* STEP 57: You can change the font-family of text, to make it look different from the default font of your browser. Each browser has some common fonts available to it. Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable. */
+
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
 }
-
+/* STEP 58: It is a bit boring for all the text to have the same font-family. You can still have the majority of the text sans-serif and make just the h1 and h2 elements different using a different selector. Style both the h1 and the h2 elements using a single selector so that these elements' text use Impact font. */
+/* STEP 59: You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available. Add the fallback font serif after the Impact font. */
+h1, h2{
+    font-family: Impact, serif;
+}
 /* STEP 21: let's use the #menu selector to give your element a width of 300px*/
 
 /* STEP 23: Now use the existing #menu selector to set the background color of the div element to be burlywood. */
@@ -17,17 +23,23 @@ body {
 
 /* Step 25: Next, you want to center the #menu horizontally. You can do this by setting its margin-left and margin-right properties to auto. Think of the margin as invisible space around an element. Using these two margin properties, center the #menu element within the body element. */
 /* STEP 27: Change the existing #menu selector into a class selector by replacing #menu with a class named .menu. to apply the class's styling to the div elemnt. */
+/* STEP 53: You can give your menu some space between the content and the sides with various padding properties. Give the menu class a padding-left and a padding-right with the same value 20px. */
+/* STEP 54: Step 54: That looks better. Now try to add the same 20px padding to the top and bottom of the menu. */
+/* STEP 55: Since all 4 sides of the menu have the same internal spacing, go ahead and delete the four properties and use a single padding property with the value 20px. */
+/* STEP 56: The current width of the menu will always take up 80% of the body element's width. On a very wide screen, the coffee and dessert appear far apart from their prices. Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide. */
 .menu {
     width: 80%;
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
 }
 /* STEP 33: Step 33: Using your new flavor class as a selector, set the text-align property's value to left. */
 /* STEP 38: Step 38: That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each. */
 /* STEP 39: Step 39: Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. White space characters can cause this issue as well. One way to fix this is to make each p element's width a little less than 50%. Change the width value to 49% for each class to see what happens. */
 /* STEP 41: Now go ahead and change both the flavor and price class' widths to be 50% again. */
-.flavor {
+.flavor, .dessert {
     text-align: left;
     width: 75%;
     
@@ -42,4 +54,9 @@ body {
 .item p {
     display: inline-block;
 }
-
+/* Step 51: Something does not look right. You added the correct class attribute value to the p element with Donut as its text, but you have not defined a selector for it. 
+The CSS rule for the flavor class already sets the properties you want. Add the dessert class as an additional selector for this CSS rule. */
+/* STEP 60: Make the Est. 2020 text italicized by creating an established class selector and giving it the font-style property with the value italic. */
+.established{
+    font-style: italic;
+}
