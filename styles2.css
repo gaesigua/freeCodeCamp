@@ -54,10 +54,12 @@ h1, h2{
 }
 /* STEP 37: The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this: .item p {} */
 /* Step 73: Focusing on the menu items and prices, there is a fairly large gap between each line. Use the existing selector that targets all the p elements nested in elements with the class named item and set their top and bottom margin to be 5px. */
+/* Step 74: Using the same style selector in the previous step, make the font size of the items and prices larger by using a value of 18px. */
 .item p {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 18px;
 }
 /* Step 51: Something does not look right. You added the correct class attribute value to the p element with Donut as its text, but you have not defined a selector for it. 
 The CSS rule for the flavor class already sets the properties you want. Add the dessert class as an additional selector for this CSS rule. */
@@ -83,3 +85,27 @@ hr{
     background-color: brown;
     border-color: brown;
 }
+/* Step 75: Changing the margin-bottom to 5px looks great. However, now the space between the Cinnamon Roll menu item and the second hr element does not match the space between the top hr element and the Coffee heading. Add some more space by creating a class named bottom-line using 25px for the margin-top property. */
+.bottom-line{
+    margin-top: 25px;
+}
+/* Step 77: Next you are going to be styling the footer element. To keep the CSS organized, add a comment at the end of styles.css with the text FOOTER. */
+
+/* FOOTER */
+footer{
+    font-size: 14px;
+}
+
+/* Step 79: The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.
+To make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element (a) and use the value black for the color property. */
+a {
+    color: black;
+}
+
+/* Step 80: You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+Change the color of the footer Visit our website link to be grey when a user has visited the link. */
+a:visited {
+    color: grey;
+}
+
+
