@@ -39,6 +39,8 @@
         <section>
             <!--Step 9: Create an h2 element in the section element and give it the text Coffee. -->
             <h2>Coffee</h2>
+            <!--Step 88: The menu looks good, but other than the coffee beans background image, it is mainly just text. Under the Coffee heading, add an image using the url https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg. Give the image an alt value of coffee icon. -->
+            <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
             <!--STEP 29: Step 29: It’s looking good. Time to start adding some menu items. Add an empty article element under the Coffee heading. It will contain a flavor and price of each coffee you currently offer. -->
             <!--STEP 36: Step 36: That is kind of what you want, but now it would be nice if the flavor and price were on the same line. p elements are block-level elements, so they take up the entire width of their parent element. To get them on the same line, you need to apply some styling to the p elements so they behave more like inline elements. To do that, start by adding a class attribute with the value item to the first article element under the Coffee heading. -->
             <article  class="item">
@@ -73,13 +75,15 @@
          <!--Step 52: Below the dessert you just added, add the rest of the desserts and prices using three more article elements, each with two nested p elements. Each element should have the correct dessert and price text, and all of them should have the correct classes. -->
          <section>
             <h2>Desserts</h2>
+            <!-- Step 90: Add one last image under the Desserts heading using the url https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg. Give the image an alt value of pie icon. -->
+             <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
             <article class="item">
                 <p class="dessert">Donut</p><p class="price">1.50</p>
             </article>
             <article class="item">
                 <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
             </article class="item">
-            <article>
+            <article class="item">
                 <p class="dessert">Cheesecake</p><p class="price">3.00</p>
             </article class="item">
             <article class="item">
@@ -90,16 +94,18 @@
 
     </main>
     <!-- Step 71: Go ahead and add another hr element between the main element and the footer element. -->
-    <hr>
+    <!-- Step 76: Now add the bottom-line class to the second hr element so the styling is applied. -->
+    <hr class="bottom-line">
     <!--Step 63: Let's add a footer element below the main element, where you can add some additional information.-->
     <!--Step 64: Inside the footer, add a p element. Then, nest an anchor (a) element in the p that links to https://www.freecodecamp.org and has the text Visit our website. 
     Make sure that the link opens in a new tab by adding a target attribute with the value _blank.-->
     <!--Step 65: Add a second p element below the one with the link and give it the text 123 Free Code Camp Drive.-->
+    <!-- Step 87: Now apply the address class to the p element containing the street address 123 Free Code Camp Drive. -->
     <footer>
         <p>
             <a href="https://www.freecodecamp.org">Visit our website</a>
         </p>
-        <p>123 Free Code Camp Drive</p>
+        <p class="address">123 Free Code Camp Drive</p>
 
 
     </footer>
