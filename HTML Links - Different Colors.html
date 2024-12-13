@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+</head>
+<body>
+    <h1>HTML Links - Different Colors</h1>
+    <!-- 1. By default, unvisited links will appear underlined and blue -->
+     <!-- 2. By default, visited links will appear underlined and purple -->
+      <!-- 3. By default, active links will appear underlined and red -->
+
+      <p>Visit<a href="google.com"> Google </a>for more information.</p>
+      <style>
+        a:link{
+            color: green;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        a:visited{
+            color: pink;
+
+        }
+        a:hover{
+            color: gray;
+            text-decoration: underline;
+        }
+        a:active{
+            color: blue;
+        }
+
+        /* 4. We can also make a link look like a button */
+
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+      </style>
+    
+</body>
+</html>
