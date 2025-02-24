@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We want to thank you for taking this time to help us improve this platform</p>
+    <form id="survey-form">
+      <label for="name">Name: <input id="name" type="text" required placeholder="John Doe"></label>
+      <label id="email">Email: <input id="email" type="email" placeholder="johndoe@gmail.com"></label>
+      <label id="number">Number: <input id="number" type="number" min="1" max="9" placeholder="9"></label>
+      <label>What is Your American favorite sport?
+        <select id="dropdown">
+        <option value="">select one</option>
+        <option value="nba">NBA</option>
+        <option value="nfl">NFL</option>
+        </select>
+      </label>
+      <legend>What is your gender?
+      <label for="female">Female: <input id="female" type="radio" name="gender"></label>
+      <label for="male">Male: <input id="male" type="radio" name="gender"></label>
+      </legend>
+      
+
+    </form>
