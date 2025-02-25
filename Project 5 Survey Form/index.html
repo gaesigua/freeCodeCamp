@@ -2,23 +2,23 @@
 <html lang="en">
   <head>
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">We want to thank you for taking this time to help us improve this platform</p>
     <form action="" id="survey-form">
       <fieldset>
-        <label for="name">Name: <input id="name" type="text" required placeholder="John Doe"></label>
-      <label id="email">Email: <input id="email" type="email" placeholder="johndoe@gmail.com"></label>
-      <label id="number">Age: <input id="number" type="number" min="1" max="9" placeholder="9"></label>
-
+        <label for="name" id="name-label">Name: </label><input id="name" type="text" required placeholder="Ex: John Doe">
+        <label for="email" id="email-label">Email: </label><input id="email" type="email" placeholder="Ex: johndoe@gmail.com">
+        <label for="number" id="age-label">Age: </label><input id="age" type="number" min="15" max="99" placeholder="Ex: 18">
       </fieldset>
       <fieldset>
-        <label for="">Where do you reside? 
-          <select name="" id="">
-            <option value="">Kicukiro</option>
-            <option value="">Gasabo</option>
-            <option value="">Nyarugenge</option>
+        <label for="residence-dropdown">Where do you reside? 
+          <select id="residence-dropdown">
+            <option id="" value="kicukiro">Kicukiro</option>
+            <option id="" value="gasabo">Gasabo</option>
+            <option id="" value="nyarugenge">Nyarugenge</option>
         </select></label>
         <label>What is Your American favorite sport?
           <select id="dropdown">
