@@ -4,40 +4,71 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">We want to thank you for taking this time to help us improve this platform</p>
+  <body class="poppins-regular">
+    <header class="header">
+      <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+    <p id="description" class="text-center">We want to thank you for taking this time to help us improve this platform</p>
+
+    </header>
+    
     <form action="" id="survey-form">
-      <fieldset>
-        <label for="name" id="name-label">Name: </label><input id="name" type="text" required placeholder="Ex: John Doe">
-        <label for="email" id="email-label">Email: </label><input id="email" type="email" placeholder="Ex: johndoe@gmail.com">
-        <label for="number" id="age-label">Age: </label><input id="age" type="number" min="15" max="99" placeholder="Ex: 18">
-      </fieldset>
-      <fieldset>
-        <label for="residence-dropdown">Where do you reside? 
+      <div class="form-group">
+          <label for="name" id="name-label">Name </label><input id="name" type="text" required placeholder="Ex: John Doe" class="form-format">
+      </div>  
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email </label><input id="email" type="email" placeholder="Ex: johndoe@gmail.com" class="form-format">
+      </div>   
+
+      <div class="form-group">
+        <label for="number" id="age-label">Age </label><input id="age" type="number" min="15" max="99" placeholder="Ex: 18" class="form-format">
+      </div>
+
+      <div class="form-group">
+        <label for="residence-dropdown">Where do you reside?</label> 
+        <div class="form-format">
           <select id="residence-dropdown">
-            <option id="" value="kicukiro">Kicukiro</option>
-            <option id="" value="gasabo">Gasabo</option>
-            <option id="" value="nyarugenge">Nyarugenge</option>
-        </select></label>
+            <option value="kicukiro">Kicukiro</option>
+            <option value="gasabo">Gasabo</option>
+            <option value="nyarugenge">Nyarugenge</option>
+        </select>
+        </div>
+      </div>
+
+      <div>
         <label>What is Your American favorite sport?
-          <select id="dropdown">
-          <option value="">select one</option>
-          <option value="nba">NBA</option>
-          <option value="nfl">NFL</option>
-          </select>
-      </fieldset>
-      <fieldset>
-        <legend>What is your gender?
-          <label for="female">Female: <input id="female" type="radio" name="gender"></label>
-          <label for="male">Male: <input id="male" type="radio" name="gender"></label>
-          </legend>
-      </fieldset>
-      <fieldset>
-        <legend>What is your favorite food?</legend>
-        <label for=""><input type="checkbox" name="" id="rice" checked>Rice</label>
-        <label for=""><input type="checkbox" name="" id="irish-potatoes">Irish Potatoes</label>
-        <label for=""><input type="checkbox" id="meat">Meat</label>
-        <label for=""><input type="checkbox" name="" id="ugali">Ugali</label>
-      </fieldset>
+          <div>
+            <select id="dropdown">
+              <option value="">select one</option>
+              <option value="nba">NBA</option>
+              <option value="nfl">NFL</option>
+              </select>
+
+          </div>
+          
+      </div>
+      <div>
+        <!-- there is an issue here below with the label -->
+        <label>What is your gender?</label>
+        <label for="female">Female: <input id="female" type="radio" name="gender"></label>
+        <label for="male">Male: <input id="male" type="radio" name="gender"></label>
+      </div>
+      <div>
+        <label>What is your favorite food?</label>
+          <label for=""><input type="checkbox" name="" id="rice" checked>Rice</label>
+          <label for=""><input type="checkbox" name="" id="irish-potatoes">Irish Potatoes</label>
+          <label for=""><input type="checkbox" id="meat">Meat</label>
+          <label for=""><input type="checkbox" name="" id="ugali">Ugali</label>
+
+      </div>
+      <div>
+        <label for="comment">Add any additional thoughts, please
+          <textarea id="comment" name="" id="" placeholder="Ex: We would like to have more extra-curricular activities" cols="60" rows="4"></textarea></label>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+      
     </form>
+  </body>
+  </html>

@@ -6,15 +6,34 @@ body{
     border: 1px solid black;
     color: white;
 }
-h1, p{
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
+.header{
+    border: 1px solid white;
+    margin-bottom: 1rem;
 
+}
+.text-center{
+    text-align: center;
+}
+form{
+    display: block;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+}
+.form-group{
+    border: 1px solid white;
+}
+.form-format{
+    display: block;
+    height: 1.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border: 1px solid red;
+    border-radius: 0.2rem;
 }
 .poppins-regular {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
   
