@@ -1,6 +1,18 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: #0a0a23;;
+}
+span[class~="sr-only"]{
+    border: 0;
+}
+
 table{
     border: 1px solid black;
 }
 tr{
     border: 1px solid red;
 }
+
