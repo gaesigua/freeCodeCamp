@@ -20,12 +20,25 @@ body{
     background: linear-gradient(#5e5e5e 85%, #45454f 100%);
 }
 
-.box{
-    width: 200px;
-    height: 600px;
-    background-color: #000;
-    position: absolute;
-    top: 800px;
-    left: 650px;
 
+.cat-left-ear{
+    position: absolute;
+    top: -26px;
+    left: -31px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    transform: rotate(-45deg);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+}
+
+.cat-right-ear{
+    position: absolute;
+    top: -26px;
+    left: 163px;
+    transform: rotate(45deg);
+    border-right: 35px solid transparent;
+    border-left: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
 }
