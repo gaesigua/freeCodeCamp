@@ -118,3 +118,55 @@ body{
     background-color: #fff;
 }
 
+.cat-nose{
+    position: absolute;
+    top: 108px;
+    left: 85px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #442c2c;
+}
+
+.cat-mouth div{
+    border: 2px solid #000;
+    width: 30px;
+    height: 50px;
+    border-color: black transparent transparent transparent;
+    border-radius: 190%/190px 150px 0 0;
+}
+
+.cat-mouth-line-left{
+    position: absolute;
+    top: 88px;
+    left: 74px;
+    transform: rotate(170deg);
+}
+
+.cat-mouth-line-right{
+    position: absolute;
+    top: 88px;
+    left: 91px;
+    transform: rotate(165deg);
+}
+
+.cat-whiskers-left div{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+}
+
+.cat-whiskers-right div{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+}
+
+.cat-whiskers-left-top{
+    position: absolute;
+    top: 120px;
+    left: 52px;
+}
+
