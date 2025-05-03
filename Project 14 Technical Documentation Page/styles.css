@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+  }
+  #main-doc{
+    display: flex;
+    width: 100%;
+  }
+  
+  #navbar{
+    /* display: block; */
+    /* width: 100%; */
+  }
+  .nav-link {
+    display: block;
+  
+    color: black;
+    width:80%;
+  }
