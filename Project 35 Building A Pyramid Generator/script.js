@@ -191,6 +191,131 @@ function padRow(){
 const callNew = padRow();
 console.log(callNew);
 
+//  Step 51
 
+function padRow2(){
+    return "Hello!";
+}
 
+//  Step 52 and Step 53
 
+function padRow3(name){
+    return name
+}
+
+//  Step 54
+
+function padRow4(name){
+    return name;
+}
+
+const call4 = padRow4("Gaesigua");
+
+//  Step 55
+
+function addTwoNumbers(number1, number2){
+    return number1 + number2;
+}
+let sum = addTwoNumbers(5, 10);
+console.log(sum);
+
+//  Step 56
+
+function padRow5(name){
+    return character + name;
+}
+
+//  Step 57
+
+function padRow6(name){
+    const test = "Testing";
+    return character + name;
+}
+
+//  Step 58
+
+function padRow7(name){
+    const test = "Testing";
+    return test;
+}
+
+//  Step 59
+
+function padRow8(){
+    const test = "Testing";
+    return test;                //to check back 
+}
+
+//  Step 60
+
+function padRow9(name){
+    const test = "Testing";
+    console.log("This will work!";
+    return test;
+    console.log("This will not work!");
+}
+
+//  Step 61
+
+function padRow10(){
+    const test = "Testing";
+    return test;
+}
+const call10 = padRow10();
+console.log(call10);
+
+//  Step 62
+
+function padRow11(){
+
+}
+const call11 = padRow11();
+console.log(call11);
+
+//  Step 63
+
+function padRow12(){
+
+}
+
+//   Step 64
+
+function padRow13(rowNumber, rowCount){
+
+}
+
+//  Step 65
+
+function padRow14(rowNumber, rowCount){
+    return character.repeat(rowNumber);
+}
+
+//  Step 66
+
+for(let i = 0; i < count; i = i + 1){
+    rows.push(padRow());
+}
+
+//  Step 67
+
+for(let i = 0; i < count; i = i + 1){
+    rows.push(padRow(i + 1, count));
+}
+
+//  Step 68
+
+function padRow15(rowNumber, rowCount){
+    return " " + character.repeat(rowNumber) + " ";
+}
+
+//  Step 69
+
+function padRow16(rowNumber, rowCount){
+    return " ".repeat(rowCount - rowNumber) + character.repeat() + " ".repeat(rowCount - rowNumber);
+}
+
+//  Step 70
+
+function padRow17(rowNumber, rowCount){
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
